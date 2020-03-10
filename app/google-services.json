@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "472222591734",
+    "firebase_url": "https://homescreen-bc055.firebaseio.com",
+    "project_id": "homescreen-bc055",
+    "storage_bucket": "homescreen-bc055.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472222591734:android:55c9c41f5ede0839",
+        "android_client_info": {
+          "package_name": "com.example.darshi.homescreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472222591734-724pu8os5399beh4a9fo484qlbkfo3l2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.darshi.homescreen",
+            "certificate_hash": "2f5d8361d838069593289e46e724e35302a7b24f"
+          }
+        },
+        {
+          "client_id": "472222591734-emuj9pbvrsniumrs35brsf44cdgpfbnq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5ArtIjLIyrd5u0utIXMDF7f2Gfu_qWQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472222591734-emuj9pbvrsniumrs35brsf44cdgpfbnq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

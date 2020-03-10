@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/receipts"
+        android:icon="@drawable/ic_receipt_black_24dp"
+        android:title="Manage Receipts"/>
+    <item
+        android:id="@+id/complaintBox"
+        android:icon="@drawable/ic_complaint_black_24dp"
+        android:title="Complaint Box"/>
+
+    <item
+        android:id="@+id/voteOnIssue"
+        android:icon="@drawable/ic_vote_on_issue_24dp"
+        android:title="Vote on Issue"/>
+
+</menu>

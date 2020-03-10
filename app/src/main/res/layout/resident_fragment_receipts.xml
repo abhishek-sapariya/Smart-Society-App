@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#BADA89"
+
+        android:orientation="horizontal"
+        android:layout_weight="0.1">
+
+        <TextView
+            android:id="@+id/res_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Current Report"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_weight="0.5"
+
+            />
+        <TextView
+            android:id="@+id/res_report_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/show_report_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Show Current report"
+        android:background="@drawable/custom_button"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/res_currentReport"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.8"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.1">
+
+        <Button
+            android:id="@+id/res_currentReportbtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="View Current Report" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReceiptInfo">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RECEIPT DETAILS"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@drawable/gradient"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/linear"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the title you want in your receipt"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/receipt_title"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:hint="Title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter address"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addline1"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="10dp"
+            android:hint="Landmark"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addline2"
+            android:layout_marginTop="10dp"
+            android:hint="Area/Town"
+            android:fontFamily="sans-serif-black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addline3"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:hint="City"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pincode"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:hint="Enter pincode"
+            android:fontFamily="sans-serif-black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/receipts_info_done"
+            android:text="Done"
+            android:fontFamily="sans-serif-black"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

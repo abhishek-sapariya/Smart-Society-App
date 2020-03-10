@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserType"
+    android:background="#ffff"
+    android:alpha="0.8">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/gradient" />
+
+    <LinearLayout
+        android:background="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"/>
+
+        <EditText
+            android:drawableRight="@drawable/ic_person"
+            android:drawablePadding="20dp"
+            android:id="@+id/Global_ResidentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="  Enter Full Name"
+            android:fontFamily="sans-serif-black"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Block"/>
+
+
+        <EditText
+            android:id="@+id/Global_BlockNo"
+            android:drawableRight="@drawable/ic_block"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textCapCharacters"
+            android:text=""
+            android:hint="Enter Block "
+            android:fontFamily="sans-serif-black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flat Number"/>
+
+
+        <EditText
+            android:id="@+id/Global_FlatNo"
+            android:drawableRight="@drawable/ic_numbered"
+            android:drawablePadding="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text=""
+            android:hint="Enter Your Flat Number"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Members in Family"/>
+
+
+        <EditText
+            android:id="@+id/Global_No_Of_Members"
+            android:drawableRight="@drawable/ic_group"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text=""
+            android:hint="Enter No. Of Members In Family"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"/>
+
+
+        <Button
+            android:id="@+id/secretarybtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_button"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:text="Secretary" />
+        <Button
+            android:id="@+id/residentbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="20dp"
+            android:text="Resident" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/lotus" />
+
+</RelativeLayout>

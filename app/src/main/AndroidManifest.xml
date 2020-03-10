@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.darshi.homescreen">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Smart Society"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ResidentComplaintsFragment"></activity>
+        <activity android:name=".CreateComplaint" />
+        <activity android:name=".SocietyName">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.darshi.homescreen"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/providepaths" />
+        </provider>
+
+        <activity android:name=".ViewReport" />
+        <activity android:name=".CreateReport" />
+        <activity android:name=".VoteOnIssueFragment" />
+        <activity android:name=".CreateIssue" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ResidentVoteOnIssueFragment1" />
+        <activity android:name=".CreateNotice" />
+        <activity android:name=".UserType" />
+        <activity android:name=".ReceiptInfo" />
+        <activity android:name=".GetCode" />
+        <activity android:name=".PutSocietyCode" />
+    </application>
+
+</manifest>

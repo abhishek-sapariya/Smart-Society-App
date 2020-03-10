@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/linear"
+
+    tools:context=".CreateIssue">
+
+    <EditText
+        android:id="@+id/issue_title"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Write Issue Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/issue_desc"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Write Issue Description"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/issue_title" />
+
+
+    <Button
+        android:id="@+id/issue_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/custom_button"
+        android:text="Cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vote_time_deadline_btn" />
+
+    <Button
+        android:id="@+id/issue_upload_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/custom_button"
+        android:text="Upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/issue_cancel_btn"
+        app:layout_constraintTop_toBottomOf="@+id/vote_time_deadline_btn" />
+
+    <Button
+        android:id="@+id/vote_deadline_btn"
+        android:layout_width="332dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="23dp"
+        android:text="Set Voting Deadline Date"
+        android:background="@drawable/custom_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/issue_desc" />
+
+    <Button
+        android:id="@+id/vote_time_deadline_btn"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Set Voting Deadline Time"
+        android:background="@drawable/custom_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vote_deadline_btn" />
+
+
+</android.support.constraint.ConstraintLayout>

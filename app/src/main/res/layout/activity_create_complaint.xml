@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateComplaint">
+
+    <EditText
+        android:id="@+id/complaint_title"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Write Complaint Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/complaint_desc"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Write Complaint Description"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complaint_title" />
+
+
+    <Button
+        android:id="@+id/complaint_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/custom_button"
+        android:text="Cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complaint_desc" />
+
+    <Button
+        android:id="@+id/complaint_upload_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/custom_button"
+        android:text="Upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/complaint_cancel_btn"
+        app:layout_constraintTop_toBottomOf="@+id/complaint_desc" />
+
+
+</android.support.constraint.ConstraintLayout>
